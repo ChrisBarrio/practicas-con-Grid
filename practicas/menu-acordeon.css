@@ -17,6 +17,9 @@ body{
         background: none;
         border: none;
     }
+        button a{
+            color: #000;
+        }
     h1{
         display: flex;
         justify-content: center;
