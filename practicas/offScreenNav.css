@@ -9,6 +9,7 @@
 
 html, body {
   height: 100%;
+  font-size: 16px;
 }
 
     .page {
@@ -79,7 +80,7 @@ html, body {
             display: grid;
             grid-gap: 15px;
             grid-template-columns: repeat( auto-fill, minmax(330px, 1fr) );
-            height: 100vh;                
+            height: 100vh;
         }
         
         .item2 div{
