@@ -28,8 +28,8 @@ body{
   font-size: 1.1em;
   background: #717171;
   border-bottom: 0;
-  min-width: 40px;
-  margin-right: 2px;
+  min-width: 2.5rem;
+  margin-right: 0.125rem;
   margin-bottom: 0 !important;
   box-sizing: border-box;
   cursor: pointer;
@@ -53,7 +53,7 @@ body{
   display: grid;
 }
 .t-content {
-  padding: 0 1em;
+  padding: 0 1rem;
   /* background-color: rgb(136, 135, 135); */
   background-color: #678983;
   box-sizing: border-box;
@@ -62,7 +62,7 @@ body{
   height: 37.5rem;
   /* height: 100vh; */
   color: #b7b7b7;
-  line-height: 1.3em;
+  line-height: 1.3rem;
   text-align: justify;
   z-index: 1;
   position: relative;
@@ -71,6 +71,7 @@ body{
   overflow: hidden;
   border-radius: 1.3em;
 }
+
 .t-content.selected {
   max-height: 3000px;
   transition: max-height 1.25s ease 0.5s;
@@ -90,13 +91,13 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 5em;
   color: #fff;
 }
 
 .container .card .slide {
-  width: 300px;
-  height: 230px;
+  width: 18.75rem;
+  height: 14.375rem;
   transition: 0.5s;
 }
 
@@ -107,11 +108,11 @@ body{
   align-items: center;
   z-index: 1;
   transition: 0.7s;
-  transform: translateY(100px);
+  transform: translateY(6.25rem);
 }
 
 .container .card:hover .slide.slide1 {
-  transform: translateY(0px);
+  transform: translateY(0rem);
 }
 
 .container .card .slide.slide2 {
@@ -119,7 +120,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   box-sizing: border-box;
   transition: 0.8s;
   transform: translateY(-100px);
@@ -134,9 +135,9 @@ body{
 .container .card .slide.slide2::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 4px;
-  bottom: 13px;
+  width: 2.5rem;
+  height: 0.25rem;
+  bottom: 0.8125rem;
   left: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -153,9 +154,12 @@ body{
 .container .card .slide.slide2 .content h3 {
   margin: 0 0 10px 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
   color: #528ee7;
+}
+.container .card .slide.slide2 .content a{
+  text-decoration: none;
 }
 
 .container{
@@ -167,7 +171,29 @@ body{
 
 .containerP {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
     justify-items: center;
     height: 100%;
 }
+
+
+/* -------Tablet--------- */
+@media (max-width: 811px) {
+  
+  body{
+    font-size: 12px;
+    background-color: #FFEEAD;
+  }
+  .t-content {
+    background-color: #FFAD60;
+  }
+  .t-contents,.t-content.selected{
+    height: 100%;
+  }
+
+
+  }
+
+  
+  
+    }
